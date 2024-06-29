@@ -22,7 +22,7 @@ logging.basicConfig(level=logging.NOTSET,
                     #        " %(funcName)s - line: %(lineno)d - %(message)s",
                     handlers=[
                         logging.StreamHandler()
-                        # ,logging.FileHandler('logs.log', encoding='utf-8')
+                        # logging.FileHandler('logs.log', encoding='utf-8')
                         ])
 logging.getLogger().handlers[0].setFormatter(ColoredFormatter())
 
